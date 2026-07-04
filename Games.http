@@ -1,0 +1,29 @@
+GET http://localhost:5216/games
+
+###
+GET http://localhost:5216/games/8
+
+###
+POST http://localhost:5216/games
+Content-Type: application/json
+
+{
+    "name": "Mario",
+    "genre": "Platformer",
+    "price": 59.99,
+    "releaseDate": "2023-10-20"
+}
+
+###
+PUT http://localhost:5216/games/2
+Content-Type: application/json
+
+{
+    "name": "Diablo hah",
+    "genre": "ARPG",
+    "price": 3.99,
+    "releaseDate": "1999-07-15"
+}
+
+###
+DELETE http://localhost:5216/games/2
