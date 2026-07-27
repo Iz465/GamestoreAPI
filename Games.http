@@ -1,29 +1,33 @@
 GET http://localhost:5216/games
 
 ###
-GET http://localhost:5216/games/8
+GET http://localhost:5216/games/3
 
 ###
 POST http://localhost:5216/games
 Content-Type: application/json
 
 {
-    "name": "Mario",
-    "genre": "Platformer",
-    "price": 59.99,
-    "releaseDate": "2023-10-20"
+    "name": "TEST GAME",
+    "genreId": 1,
+    "price": 9.99,
+    "releaseDate": "1991-02-01"
 }
 
 ###
-PUT http://localhost:5216/games/2
+PUT http://localhost:5216/games/3
 Content-Type: application/json
 
 {
-    "name": "Diablo hah",
-    "genre": "ARPG",
-    "price": 3.99,
-    "releaseDate": "1999-07-15"
+    "name": "Street Fighter II turbo",
+    "genreId": 1,
+    "price": 11.99,
+    "releaseDate": "1991-02-01"
+
 }
 
 ###
-DELETE http://localhost:5216/games/2
+DELETE http://localhost:5216/games/4
+
+###
+GET http://localhost:5216/genres

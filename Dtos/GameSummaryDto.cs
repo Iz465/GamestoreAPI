@@ -1,6 +1,6 @@
 namespace GameStore.Api.Dtos;
 
-public record class GameDto // Dto stands for data transfer object
+public record class GameSummaryDto // Dto stands for data transfer object
 (
     int Id,
     string Name,
